@@ -1,0 +1,254 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap');
+
+/* Reused parameters */
+@mixin bottom-shadow {
+    box-shadow:0px 5px 8px rgba(0,0,0,.1);
+}
+
+@mixin colored-button {
+    background: rgb(224,111,218);
+    background: linear-gradient(180deg, #FF79DA 28%, #9356DC 100%);
+}
+
+@mixin title-underline {
+    width: 40px;
+    margin:0;
+    margin-top:-8px;
+    border-top: 3px solid $tertiary-color;
+    display:block;
+}
+
+@mixin ticket {
+    .ticket{
+        margin-top:4%;
+        background-color: white;
+        border-radius: 1em;
+        padding:3%;
+        @include bottom-shadow();
+
+        h3{
+            margin:0;
+            font-size: 1.1em;
+            font-family: 'Roboto';
+            line-height: 1.5em;
+            font-weight: 500;
+        }
+
+        p{
+            margin:0;
+            font-size: 1em;
+            font-family: 'Roboto';
+            font-weight: 300;
+            line-height: 1.5em;
+        }
+
+        .price{
+            font-size: 0.9em;
+            font-weight: 500;
+            float:right;
+            margin: -20px 0 0 0;
+        }
+    }
+}
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color:#99E2D0;
+
+/* General */
+.flex{
+    display:flex;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    padding: 4% 0;
+    box-shadow: 0px 0px 7px rgba(0,0,0,.3);
+    position:relative;
+
+    .logo{
+        justify-content: center;
+
+        img{
+            width: 40%;
+        }
+    }
+
+    a{
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        color: black;
+        font-size: 1em;
+    }
+}
+
+/* Body */
+.card__cover{
+    margin:0;
+
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+/* Menu Section */
+.menu{
+    background-color: #F6F6F6;
+    margin-top:-60px;
+    position: relative;
+    border-radius: 2em 2em 0 0;
+    padding: 5% 2%;
+    flex-direction: column;
+
+    h1{
+        font-family: 'Shrikhand';
+        font-weight: 500;
+        font-size: 1.5em;
+        margin: 3% 0 0 3%;
+    }
+
+    &--heart{
+        position: absolute;
+        right:30px;
+        margin-top:20px;
+    }
+
+    /* Starter section */
+    .starters{
+
+        flex-direction: column;
+        margin: 0 3%;
+
+        h2{
+            font-family:'Roboto';
+            font-size: 0.9em;
+            margin-top:7%;
+            font-weight: 300;
+        }
+
+        span{
+            @include title-underline();
+        }
+
+        &__allstarters{
+            flex-direction: column;
+
+            @include ticket();
+        }
+
+    }
+
+    /* Main-courses section */
+    .main-courses{
+
+        flex-direction: column;
+        margin: 0 3%;
+
+        h2{
+            font-family:'Roboto';
+            font-size: 0.9em;
+            margin-top:7%;
+            font-weight: 300;
+        }
+
+        span{
+            @include title-underline();
+        }
+
+        &__allcourses{
+            flex-direction: column;
+
+            @include ticket();
+        }
+
+
+    }
+
+    /* Desert section */
+    .deserts{
+
+        flex-direction: column;
+        margin: 0 3%;
+
+        h2{
+            font-family:'Roboto';
+            font-size: 0.9em;
+            margin-top:7%;
+            font-weight: 300;
+        }
+
+        span{
+            @include title-underline();
+        }
+
+        &__allcourses{
+            flex-direction: column;
+
+            @include ticket();
+        }
+
+
+    }
+
+    .order{
+        @include bottom-shadow();
+        @include colored-button();
+        font-family: 'Roboto';
+        text-decoration: none;
+        padding:4% 0;
+        margin: 12% 25% 8% 25%;
+        width: fit-content;
+        border-radius: 1.5em;
+        color:white;
+        text-align: center;
+    }
+
+}
+
+/* Footer */
+footer{
+    font-size: 1.1em;
+    background-color: hsl(0, 0%, 21%);
+    padding: 5% 0 7% 6%;
+    margin: 0;
+
+    h2{
+        font-family: 'Shrikhand';
+        font-weight: 100;
+        color: white;
+        margin: 0 0 3% 0;
+        font-size: 1.05em;
+    }
+
+    .footer__categories{
+        flex-direction: column;
+
+        a{
+            text-decoration-line: none;
+            color: white;
+            font-family: 'Roboto';
+            line-height: 1.7em;
+        }
+
+        .fa-utensils{
+            padding-right: 1%;
+            width: 0.9em;
+            font-size: 0.8em;
+        }
+
+        .fa-hands-helping{
+            padding-right: 1%;
+            width: 0.8em;
+        }
+
+    }
+
+}

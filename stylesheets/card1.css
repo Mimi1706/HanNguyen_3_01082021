@@ -1,0 +1,254 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap");
+/* Reused parameters */
+/* General */
+.flex {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  padding: 4% 0;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+header .logo {
+  justify-content: center;
+}
+header .logo img {
+  width: 40%;
+}
+header a {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  color: black;
+  font-size: 1em;
+}
+
+/* Body */
+.card__cover {
+  margin: 0;
+}
+.card__cover img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Menu Section */
+.menu {
+  background-color: #F6F6F6;
+  margin-top: -60px;
+  position: relative;
+  border-radius: 2em 2em 0 0;
+  padding: 5% 2%;
+  flex-direction: column;
+  /* Starter section */
+  /* Main-courses section */
+  /* Desert section */
+}
+.menu h1 {
+  font-family: "Shrikhand";
+  font-weight: 500;
+  font-size: 1.5em;
+  margin: 3% 0 0 3%;
+}
+.menu--heart {
+  position: absolute;
+  right: 30px;
+  margin-top: 20px;
+}
+.menu .starters {
+  flex-direction: column;
+  margin: 0 3%;
+}
+.menu .starters h2 {
+  font-family: "Roboto";
+  font-size: 0.9em;
+  margin-top: 7%;
+  font-weight: 300;
+}
+.menu .starters span {
+  width: 40px;
+  margin: 0;
+  margin-top: -8px;
+  border-top: 3px solid #99E2D0;
+  display: block;
+}
+.menu .starters__allstarters {
+  flex-direction: column;
+}
+.menu .starters__allstarters .ticket {
+  margin-top: 4%;
+  background-color: white;
+  border-radius: 1em;
+  padding: 3%;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+}
+.menu .starters__allstarters .ticket h3 {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: "Roboto";
+  line-height: 1.5em;
+  font-weight: 500;
+}
+.menu .starters__allstarters .ticket p {
+  margin: 0;
+  font-size: 1em;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.menu .starters__allstarters .ticket .price {
+  font-size: 0.9em;
+  font-weight: 500;
+  float: right;
+  margin: -20px 0 0 0;
+}
+.menu .main-courses {
+  flex-direction: column;
+  margin: 0 3%;
+}
+.menu .main-courses h2 {
+  font-family: "Roboto";
+  font-size: 0.9em;
+  margin-top: 7%;
+  font-weight: 300;
+}
+.menu .main-courses span {
+  width: 40px;
+  margin: 0;
+  margin-top: -8px;
+  border-top: 3px solid #99E2D0;
+  display: block;
+}
+.menu .main-courses__allcourses {
+  flex-direction: column;
+}
+.menu .main-courses__allcourses .ticket {
+  margin-top: 4%;
+  background-color: white;
+  border-radius: 1em;
+  padding: 3%;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+}
+.menu .main-courses__allcourses .ticket h3 {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: "Roboto";
+  line-height: 1.5em;
+  font-weight: 500;
+}
+.menu .main-courses__allcourses .ticket p {
+  margin: 0;
+  font-size: 1em;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.menu .main-courses__allcourses .ticket .price {
+  font-size: 0.9em;
+  font-weight: 500;
+  float: right;
+  margin: -20px 0 0 0;
+}
+.menu .deserts {
+  flex-direction: column;
+  margin: 0 3%;
+}
+.menu .deserts h2 {
+  font-family: "Roboto";
+  font-size: 0.9em;
+  margin-top: 7%;
+  font-weight: 300;
+}
+.menu .deserts span {
+  width: 40px;
+  margin: 0;
+  margin-top: -8px;
+  border-top: 3px solid #99E2D0;
+  display: block;
+}
+.menu .deserts__allcourses {
+  flex-direction: column;
+}
+.menu .deserts__allcourses .ticket {
+  margin-top: 4%;
+  background-color: white;
+  border-radius: 1em;
+  padding: 3%;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+}
+.menu .deserts__allcourses .ticket h3 {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: "Roboto";
+  line-height: 1.5em;
+  font-weight: 500;
+}
+.menu .deserts__allcourses .ticket p {
+  margin: 0;
+  font-size: 1em;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.menu .deserts__allcourses .ticket .price {
+  font-size: 0.9em;
+  font-weight: 500;
+  float: right;
+  margin: -20px 0 0 0;
+}
+.menu .order {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  background: #e06fda;
+  background: linear-gradient(180deg, #FF79DA 28%, #9356DC 100%);
+  font-family: "Roboto";
+  text-decoration: none;
+  padding: 4% 0;
+  margin: 12% 25% 8% 25%;
+  width: fit-content;
+  border-radius: 1.5em;
+  color: white;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  font-size: 1.1em;
+  background-color: #363636;
+  padding: 5% 0 7% 6%;
+  margin: 0;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-weight: 100;
+  color: white;
+  margin: 0 0 3% 0;
+  font-size: 1.05em;
+}
+footer .footer__categories {
+  flex-direction: column;
+}
+footer .footer__categories a {
+  text-decoration-line: none;
+  color: white;
+  font-family: "Roboto";
+  line-height: 1.7em;
+}
+footer .footer__categories .fa-utensils {
+  padding-right: 1%;
+  width: 0.9em;
+  font-size: 0.8em;
+}
+footer .footer__categories .fa-hands-helping {
+  padding-right: 1%;
+  width: 0.8em;
+}
+
+/*# sourceMappingURL=card1.css.map */
