@@ -26,7 +26,7 @@
     width: 2em;
     margin:2% 7% 0 5%;
     position: relative;
-    margin: 0;
+    margin: 2% 0 0 0;
 }
 
 @mixin instruction-icon-desktop {
@@ -35,6 +35,7 @@
     font-size: 2em;
     width: 2em;
     margin-left:2%;
+    margin-top: 2%;
 }
 
 @mixin new-sticker {
@@ -423,7 +424,11 @@ footer{
         }
 
         .info__instructions{
-            padding: 5% 5% 0% 5%;
+            padding: 5% 5% 0% 0;
+
+            h2{
+                padding-left:5%;
+            }
 
             .info__allinstructions{
                 flex-direction: row;
@@ -454,10 +459,11 @@ footer{
                     }
 
                     &--text{
-                        font-size: 1.4em;
+                        font-size: 1.2em;
                         justify-content: center;
                         align-content: center;
                         text-align: center;
+                        margin-left:-10px;
                     }
                 }
             }
@@ -497,7 +503,6 @@ footer{
     }
 
     /* Footer - DESKTOP VERSION */
-
     Footer{
         padding: 3% 0 3% 6%;
 

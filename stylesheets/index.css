@@ -261,7 +261,7 @@ footer .footer__categories .fa-hands-helping {
     width: 2em;
     margin: 2% 7% 0 5%;
     position: relative;
-    margin: 0;
+    margin: 2% 0 0 0;
   }
   .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-bars {
     color: #7E7E7E;
@@ -270,7 +270,7 @@ footer .footer__categories .fa-hands-helping {
     width: 2em;
     margin: 2% 7% 0 5%;
     position: relative;
-    margin: 0;
+    margin: 2% 0 0 0;
   }
   .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-store {
     color: #7E7E7E;
@@ -279,7 +279,7 @@ footer .footer__categories .fa-hands-helping {
     width: 2em;
     margin: 2% 7% 0 5%;
     position: relative;
-    margin: 0;
+    margin: 2% 0 0 0;
   }
   .info .info__instructions .info__allinstructions .info__instructions--instruction--number {
     margin-left: -4.5%;
@@ -335,7 +335,10 @@ footer .footer__categories .fa-hands-helping {
     font-size: 1.5em;
   }
   .info .info__instructions {
-    padding: 5% 5% 0% 5%;
+    padding: 5% 5% 0% 0;
+  }
+  .info .info__instructions h2 {
+    padding-left: 5%;
   }
   .info .info__instructions .info__allinstructions {
     flex-direction: row;
@@ -351,6 +354,7 @@ footer .footer__categories .fa-hands-helping {
     font-size: 2em;
     width: 2em;
     margin-left: 2%;
+    margin-top: 2%;
   }
   .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-bars {
     color: #7E7E7E;
@@ -358,6 +362,7 @@ footer .footer__categories .fa-hands-helping {
     font-size: 2em;
     width: 2em;
     margin-left: 2%;
+    margin-top: 2%;
   }
   .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-store {
     color: #7E7E7E;
@@ -365,6 +370,7 @@ footer .footer__categories .fa-hands-helping {
     font-size: 2em;
     width: 2em;
     margin-left: 2%;
+    margin-top: 2%;
   }
   .info .info__instructions .info__allinstructions .info__instructions--instruction--number {
     margin-left: -4%;
@@ -373,10 +379,11 @@ footer .footer__categories .fa-hands-helping {
     font-size: 1em;
   }
   .info .info__instructions .info__allinstructions .info__instructions--instruction--text {
-    font-size: 1.4em;
+    font-size: 1.2em;
     justify-content: center;
     align-content: center;
     text-align: center;
+    margin-left: -10px;
   }
 
   /*Restaurants - DESKTOP VERSION*/
