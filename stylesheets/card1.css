@@ -13,15 +13,12 @@ body {
 
 /* Header */
 header {
-  padding: 4% 0;
+  padding: 5% 0;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 header .logo {
   justify-content: center;
-}
-header .logo img {
-  width: 40%;
 }
 header a {
   position: absolute;
@@ -96,6 +93,10 @@ header a {
   font-family: "Roboto";
   line-height: 1.5em;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 300px;
 }
 .menu .starters__allstarters .ticket p {
   margin: 0;
@@ -103,12 +104,18 @@ header a {
   font-family: "Roboto";
   font-weight: 300;
   line-height: 1.5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15em;
 }
 .menu .starters__allstarters .ticket .price {
   font-size: 0.9em;
   font-weight: 500;
   float: right;
+  position: relative;
   margin: -20px 0 0 0;
+  font-family: "Roboto";
 }
 .menu .main-courses {
   flex-direction: column;
@@ -143,6 +150,10 @@ header a {
   font-family: "Roboto";
   line-height: 1.5em;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 300px;
 }
 .menu .main-courses__allcourses .ticket p {
   margin: 0;
@@ -150,12 +161,18 @@ header a {
   font-family: "Roboto";
   font-weight: 300;
   line-height: 1.5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15em;
 }
 .menu .main-courses__allcourses .ticket .price {
   font-size: 0.9em;
   font-weight: 500;
   float: right;
+  position: relative;
   margin: -20px 0 0 0;
+  font-family: "Roboto";
 }
 .menu .deserts {
   flex-direction: column;
@@ -190,6 +207,10 @@ header a {
   font-family: "Roboto";
   line-height: 1.5em;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 300px;
 }
 .menu .deserts__allcourses .ticket p {
   margin: 0;
@@ -197,23 +218,32 @@ header a {
   font-family: "Roboto";
   font-weight: 300;
   line-height: 1.5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15em;
 }
 .menu .deserts__allcourses .ticket .price {
   font-size: 0.9em;
   font-weight: 500;
   float: right;
+  position: relative;
   margin: -20px 0 0 0;
+  font-family: "Roboto";
 }
 .menu .order {
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
   background: #e06fda;
   background: linear-gradient(180deg, #FF79DA 28%, #9356DC 100%);
+  font-size: 1.1em;
   font-family: "Roboto";
   text-decoration: none;
-  padding: 4% 0;
-  margin: 12% 25% 8% 25%;
-  width: fit-content;
-  border-radius: 1.5em;
+  padding: 4% 13%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-radius: 2em;
   color: white;
   text-align: center;
 }

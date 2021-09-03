@@ -157,7 +157,7 @@ header{
             .info__instructions--instruction{
                 padding:7%;
                 background-color: #F6F6F6;
-                margin-bottom: 7%;
+                margin-bottom: 6%;
                 margin-left: 5%;
                 border-radius: 1em;
                 @include bottom-shadow();
@@ -391,7 +391,7 @@ footer{
             justify-content: center;
 
             img{
-                width: 15%;
+                width: 20%;
             }
         }
     }
@@ -404,26 +404,26 @@ footer{
             padding: 2% 0;
 
             .info__location__searchbar{
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
         }
 
         .info__description{
-            padding: 5% 0 0 0;
+            padding: 4% 0 0 0;
 
             h2{
-                font-size: 2em;
+                font-size: 1.5em;
             }
 
             p{
                 padding-bottom: 2.5em;
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
 
             a{
                 padding: 20px;
                 margin: 0;
-                font-size: 1.5em;
+                font-size: 1.1em;
             }
         }
 
@@ -463,7 +463,7 @@ footer{
                     }
 
                     &--text{
-                        font-size: 1.2em;
+                        font-size: 1.1em;
                         justify-content: center;
                         align-content: center;
                         text-align: center;

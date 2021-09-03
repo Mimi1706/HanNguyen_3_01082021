@@ -65,7 +65,7 @@ header .logo {
 .info .info__description a {
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
   background: #e06fda;
-  background: linear-gradient(180deg, #e06fda 28%, #a15adb 100%);
+  background: linear-gradient(180deg, #FF79DA 28%, #9356DC 100%);
   text-decoration: none;
   padding: 5% 7%;
   border-radius: 1.5em;
@@ -87,7 +87,7 @@ header .logo {
 .info .info__instructions .info__allinstructions .info__instructions--instruction {
   padding: 7%;
   background-color: #F6F6F6;
-  margin-bottom: 7%;
+  margin-bottom: 6%;
   margin-left: 5%;
   border-radius: 1em;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
@@ -309,7 +309,7 @@ footer .footer__categories .fa-hands-helping {
     justify-content: center;
   }
   header .logo img {
-    width: 15%;
+    width: 20%;
   }
 
   /* Info - DESKTOP VERSION */
@@ -317,22 +317,22 @@ footer .footer__categories .fa-hands-helping {
     padding: 2% 0;
   }
   .info .info__location .info__location__searchbar {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .info .info__description {
-    padding: 5% 0 0 0;
+    padding: 4% 0 0 0;
   }
   .info .info__description h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .info .info__description p {
     padding-bottom: 2.5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .info .info__description a {
     padding: 20px;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   .info .info__instructions {
     padding: 5% 5% 0% 0;
@@ -379,7 +379,7 @@ footer .footer__categories .fa-hands-helping {
     font-size: 1em;
   }
   .info .info__instructions .info__allinstructions .info__instructions--instruction--text {
-    font-size: 1.2em;
+    font-size: 1.1em;
     justify-content: center;
     align-content: center;
     text-align: center;
