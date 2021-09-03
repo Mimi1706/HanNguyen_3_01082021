@@ -1,0 +1,424 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap");
+/* Reused parameters */
+/* General */
+.flex {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 5% 0;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+header .logo {
+  justify-content: center;
+}
+
+/* Info section */
+.info .info__location {
+  background-color: #EAEAEA;
+  padding: 3% 0;
+}
+.info .info__location .info__location__searchbar {
+  justify-content: center;
+}
+.info .info__location .info__location__searchbar .marp-marker_icon {
+  color: #353535;
+  font-size: 1.1em;
+  padding-right: 1%;
+}
+.info .info__location .info__location__searchbar .info__location__searchbar--input {
+  border: 0px;
+  font-family: "Roboto";
+  font-size: 1em;
+  text-align: center;
+  width: 30%;
+  background-color: inherit;
+}
+.info .info__description {
+  padding: 10%;
+  padding-bottom: 18%;
+  font-family: "Roboto";
+  margin: 0;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+.info .info__description h2 {
+  margin: 0;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+  font-size: 1.6em;
+}
+.info .info__description p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1em;
+  padding-bottom: 3em;
+  color: #4D4D4D;
+}
+.info .info__description a {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  background: #e06fda;
+  background: linear-gradient(180deg, #e06fda 28%, #a15adb 100%);
+  text-decoration: none;
+  padding: 5% 7%;
+  border-radius: 1.5em;
+  color: white;
+}
+.info .info__instructions {
+  flex-direction: column;
+  padding: 10% 5%;
+}
+.info .info__instructions h2 {
+  font-family: "Roboto";
+  margin: 0;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+.info .info__instructions .info__allinstructions {
+  flex-direction: column;
+}
+.info .info__instructions .info__allinstructions .info__instructions--instruction {
+  padding: 7%;
+  background-color: #F6F6F6;
+  margin-bottom: 7%;
+  margin-left: 5%;
+  border-radius: 1em;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+}
+.info .info__instructions .info__allinstructions .info__instructions--instruction--number {
+  background-color: #9356DC;
+  font-family: "Roboto";
+  color: white;
+  font-size: 0.8em;
+  width: 1em;
+  padding: 0.5em 0.6em;
+  text-align: center;
+  border-radius: 10em;
+  position: absolute;
+  margin-left: -10%;
+}
+.info .info__instructions .info__allinstructions .info__instructions--instruction .fa-mobile-alt {
+  color: #7E7E7E;
+  float: left;
+  font-size: 1.5em;
+  width: 1em;
+  margin: 0 7% 0 5%;
+}
+.info .info__instructions .info__allinstructions .info__instructions--instruction .fa-bars {
+  color: #7E7E7E;
+  float: left;
+  font-size: 1.5em;
+  width: 1em;
+  margin: 0 7% 0 5%;
+}
+.info .info__instructions .info__allinstructions .info__instructions--instruction .fa-store {
+  color: #7E7E7E;
+  float: left;
+  font-size: 1.5em;
+  width: 1em;
+  margin: 0 7% 0 5%;
+}
+.info .info__instructions .info__allinstructions .info__instructions--instruction--text {
+  font-family: "Roboto";
+  font-weight: 500;
+  align-self: center;
+}
+
+/* Restaurant section */
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 10% 5%;
+  flex-direction: column;
+}
+.restaurants h1 {
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+.restaurants .restaurants__allcards {
+  flex-direction: column;
+}
+.restaurants__cards {
+  width: 100%;
+}
+.restaurants a {
+  width: 100%;
+  margin-bottom: 5%;
+  text-decoration: none;
+  border-radius: 1em;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+}
+.restaurants a .card--image {
+  width: 100%;
+  height: 13em;
+  border-radius: 1em 1em 0em 0em;
+  object-fit: cover;
+}
+.restaurants a .card--description {
+  padding: 2% 0 5% 4%;
+}
+.restaurants a .card--description h3 {
+  font-family: "Roboto";
+  margin: 0;
+  color: black;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+.restaurants a .card--description p {
+  font-family: "Roboto";
+  margin: 0;
+  color: black;
+  font-weight: 300;
+}
+.restaurants a .card--heart {
+  position: relative;
+  float: right;
+  margin-right: 25px;
+  margin-top: -50px;
+}
+.restaurants a .card--new {
+  position: relative;
+  float: right;
+  margin-top: -200px;
+  margin-right: 15px;
+  padding: 2% 3%;
+  background-color: #99E2D0;
+  color: #018766;
+  font-family: "Roboto";
+  font-size: 0.8em;
+  font-weight: 500;
+  border-radius: 0.2em;
+}
+
+/* Footer */
+footer {
+  font-size: 1.1em;
+  background-color: #363636;
+  padding: 5% 0 7% 6%;
+  margin: 0;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-weight: 100;
+  color: white;
+  margin: 0 0 3% 0;
+  font-size: 1.05em;
+}
+footer .footer__categories {
+  flex-direction: column;
+}
+footer .footer__categories a {
+  text-decoration-line: none;
+  color: white;
+  font-family: "Roboto";
+  line-height: 1.7em;
+}
+footer .footer__categories .fa-utensils {
+  padding-right: 1%;
+  width: 0.9em;
+  font-size: 0.8em;
+}
+footer .footer__categories .fa-hands-helping {
+  padding-right: 1%;
+  width: 0.8em;
+}
+
+/* Tablet Version */
+@media (min-width: 700px) and (max-width: 1000px) {
+  /*Info - TABLET VERSION */
+  .info .info__description {
+    padding: 5% 0 0 0;
+  }
+  .info .info__description p {
+    padding-bottom: 2.5em;
+  }
+  .info .info__description a {
+    padding: 2%;
+    margin: 0;
+  }
+  .info .info__instructions {
+    padding: 5% 5% 0% 5%;
+  }
+  .info .info__instructions .info__allinstructions {
+    flex-direction: row;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction {
+    padding: 3%;
+    width: 100%;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-mobile-alt {
+    color: #7E7E7E;
+    float: left;
+    font-size: 1.5em;
+    width: 2em;
+    margin: 2% 7% 0 5%;
+    position: relative;
+    margin: 0;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-bars {
+    color: #7E7E7E;
+    float: left;
+    font-size: 1.5em;
+    width: 2em;
+    margin: 2% 7% 0 5%;
+    position: relative;
+    margin: 0;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-store {
+    color: #7E7E7E;
+    float: left;
+    font-size: 1.5em;
+    width: 2em;
+    margin: 2% 7% 0 5%;
+    position: relative;
+    margin: 0;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction--number {
+    margin-left: -4.5%;
+    margin-top: -30px;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction--text {
+    font-size: 1em;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  /* Restaurant - TABLET VERSION */
+  .restaurants {
+    padding: 5%;
+  }
+  .restaurants a .card--description {
+    padding-bottom: 3%;
+  }
+}
+/* Desktop Version */
+@media (min-width: 1000px) {
+  header {
+    padding: 3% 0;
+  }
+  header .logo {
+    justify-content: center;
+  }
+  header .logo img {
+    width: 15%;
+  }
+
+  /* Info - DESKTOP VERSION */
+  .info .info__location {
+    padding: 2% 0;
+  }
+  .info .info__location .info__location__searchbar {
+    font-size: 1.5em;
+  }
+  .info .info__description {
+    padding: 5% 0 0 0;
+  }
+  .info .info__description h2 {
+    font-size: 2em;
+  }
+  .info .info__description p {
+    padding-bottom: 2.5em;
+    font-size: 1.5em;
+  }
+  .info .info__description a {
+    padding: 20px;
+    margin: 0;
+    font-size: 1.5em;
+  }
+  .info .info__instructions {
+    padding: 5% 5% 0% 5%;
+  }
+  .info .info__instructions .info__allinstructions {
+    flex-direction: row;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction {
+    padding: 3%;
+    width: 100%;
+    align-content: center;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-mobile-alt {
+    color: #7E7E7E;
+    float: left;
+    font-size: 2em;
+    width: 2em;
+    margin-left: 2%;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-bars {
+    color: #7E7E7E;
+    float: left;
+    font-size: 2em;
+    width: 2em;
+    margin-left: 2%;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction .fa-store {
+    color: #7E7E7E;
+    float: left;
+    font-size: 2em;
+    width: 2em;
+    margin-left: 2%;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction--number {
+    margin-left: -4%;
+    margin-top: -3.5%;
+    padding: 1% 1.1%;
+    font-size: 1em;
+  }
+  .info .info__instructions .info__allinstructions .info__instructions--instruction--text {
+    font-size: 1.4em;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  /*Restaurants - DESKTOP VERSION*/
+  .restaurants {
+    padding: 5%;
+  }
+  .restaurants .restaurants__allcards {
+    flex-direction: row;
+  }
+  .restaurants a {
+    margin-right: 10px;
+  }
+  .restaurants a .card--description {
+    padding-bottom: 4%;
+  }
+  .restaurants a .card--description h3 {
+    font-size: 1em;
+  }
+  .restaurants a .card--description p {
+    font-size: 0.9em;
+  }
+  .restaurants a .card--heart {
+    margin-top: -40px;
+  }
+
+  /* Footer - DESKTOP VERSION */
+  Footer {
+    padding: 3% 0 3% 6%;
+  }
+  Footer h2 {
+    font-family: "Shrikhand";
+    font-weight: 100;
+    color: white;
+    margin: 0 0 1% 0;
+    font-size: 1.5em;
+  }
+  Footer .footer__categories {
+    flex-direction: column;
+  }
+  Footer .footer__categories a {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
