@@ -51,6 +51,9 @@ header a {
   /* Main-courses section */
   /* Desert section */
 }
+.menu .allmenu {
+  flex-direction: column;
+}
 .menu h1 {
   font-family: "Shrikhand";
   font-weight: 500;
@@ -59,7 +62,7 @@ header a {
 }
 .menu--heart {
   position: absolute;
-  right: 30px;
+  right: 3em;
   margin-top: 20px;
 }
 .menu .starters {
@@ -98,7 +101,7 @@ header a {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 300px;
+  width: 15em;
 }
 .menu .starters__allstarters .ticket p {
   margin: 0;
@@ -155,7 +158,7 @@ header a {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 300px;
+  width: 15em;
 }
 .menu .main-courses__allcourses .ticket p {
   margin: 0;
@@ -212,7 +215,7 @@ header a {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 300px;
+  width: 15em;
 }
 .menu .deserts__allcourses .ticket p {
   margin: 0;
@@ -298,46 +301,6 @@ footer .footer__categories .fa-hands-helping {
   .menu {
     margin-top: -100px;
   }
-  .menu__allstarters {
-    flex-direction: column;
-  }
-  .menu__allstarters .ticket {
-    margin-top: 1em;
-    background-color: white;
-    border-radius: 1em;
-    padding: 1.5em;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
-  }
-  .menu__allstarters .ticket h3 {
-    margin: 0;
-    font-size: 1.1em;
-    font-family: "Roboto";
-    line-height: 1.5em;
-    font-weight: 500;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 300px;
-  }
-  .menu__allstarters .ticket p {
-    margin: 0;
-    font-size: 1em;
-    font-family: "Roboto";
-    font-weight: 300;
-    line-height: 1.5em;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 15em;
-  }
-  .menu__allstarters .ticket .price {
-    font-size: 0.9em;
-    font-weight: 500;
-    float: right;
-    position: relative;
-    margin: -20px 0 0 0;
-    font-family: "Roboto";
-  }
 }
 /* Desktop Version */
 @media (min-width: 1000px) {
@@ -354,18 +317,38 @@ footer .footer__categories .fa-hands-helping {
   .card__cover img {
     object-fit: cover;
     width: 100%;
-    height: 25em;
+    height: 27em;
     position: relative;
-    top: -70px;
+    top: -130px;
     overflow: hidden;
   }
 
   .menu {
-    margin-top: -100px;
-    padding-top: 4em;
+    margin-top: -170px;
+    flex-direction: column;
+    padding: 2% 5%;
+  }
+  .menu .allmenu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu .allmenu .ticket {
+    width: 23vw;
+  }
+  .menu .allmenu .ticket h3 {
+    font-size: 0.9em;
+    width: 13em;
+  }
+  .menu .allmenu .ticket p {
+    font-size: 0.8em;
+    width: 15em;
+  }
+  .menu .allmenu .ticket .price {
+    font-size: 0.8em;
   }
   .menu h1 {
-    margin-top: 0;
+    margin-left: -0.5em;
+    font-size: 2em;
   }
 
   /* Footer - DESKTOP VERSION */
