@@ -137,6 +137,12 @@ header{
             padding:5% 7%;
             border-radius: 1.5em;
             color:white;
+            transition: all 0.5s;
+
+            &:hover{
+                background: linear-gradient(180deg, lighten($secondary-color, 2%) 30%, lighten($primary-color, 2%) 100%);
+                box-shadow:0px 12px 15px rgba(0,0,0,.3);
+            }
         }
     }
 
@@ -192,6 +198,22 @@ header{
                     font-weight: 500;
                     align-self: center;
                 }
+
+                &:hover{
+                    background-color:lighten($primary-color, 35%);
+
+                    .fa-mobile-alt{
+                        color:$primary-color;
+                    }
+    
+                    .fa-bars{
+                        color:$primary-color;
+                    }
+    
+                    .fa-store{
+                        color:$primary-color;
+                    }
+                }
             }
         }
     }
@@ -236,7 +258,7 @@ header{
             }
 
             .card--description{
-                padding: 2% 0 5% 4%;
+                padding: 2% 0 4% 4%;
 
                 h3{
                     font-family: 'Roboto';
@@ -255,10 +277,32 @@ header{
             }
 
             .card--heart{
-                position: relative;
+                position:relative;
                 float: right;
-                margin-right: 25px;
-                margin-top:-50px;
+                margin-top:-3em;
+                margin-right:20px;
+        
+                .heart2{
+                    width: 1.5em;
+                    position: absolute;
+                    transition: all 0.4s;
+        
+                    &:hover{
+                    transform: scale(1.2);
+                    }
+                }
+        
+                .heart1{
+                    opacity: 0;
+                    width: 1.5em;
+                    transition: all 0.1s ease-in-out;
+        
+                    &:hover{
+                    opacity: 1;
+                    transform: scale(1.2);
+                    }
+                }
+                    
             }
 
             .card--new{
@@ -373,6 +417,10 @@ footer{
         a{
             .card--description{
                 padding-bottom: 3%;
+            }
+
+            .card--heart{
+                margin-top:-60px;
             }
 
         }
@@ -499,7 +547,7 @@ footer{
             }
 
             .card--heart{
-                margin-top:-40px;
+                margin-top:-43px;
             }
 
         }

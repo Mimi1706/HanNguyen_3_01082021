@@ -6,11 +6,6 @@
     box-shadow:0px 5px 8px rgba(0,0,0,.1);
 }
 
-@mixin colored-button {
-    background: rgb(224,111,218);
-    background: linear-gradient(180deg, #FF79DA 28%, #9356DC 100%);
-}
-
 @mixin title-underline {
     width: 40px;
     margin:0;
@@ -73,6 +68,7 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color:#99E2D0;
+$mixed-colors:linear-gradient(180deg, $secondary-color 28%, $primary-color 100%);
 
 
 /* Animations Parameters */
@@ -81,13 +77,18 @@ $tertiary-color:#99E2D0;
     100% {opacity:1;}
   }
 
+@keyframes ScaleUp {
+    from{transform:scale(1)}
+    to{transform:scale(1.1)}
+}
+
 /* Animations */
-@for $i from 1 through 3 {
-    .ticket_animation-#{$i} 
+@for $i from 1 through 9 {
+    .ticket_animation-#{$i}
     { 
     animation: FadeIn #{$i * 0.6}s ease-in-out;
     transform: translate(0, -1.5em);
-    transition: transform #{$i * 0.3}s ease-in-out; 
+    transition: transform #{$i * 0.4}s ease-in-out; 
     }
 }
 
@@ -148,15 +149,40 @@ header{
     h1{
         font-family: 'Shrikhand';
         font-weight: 500;
-        font-size: 1.5em;
-        margin: 3% 0 0 3%;
+        font-size: 1.8em;
+        margin: 3% 0 0 4%;
     }
 
     &--heart{
+
+        right:5em;
+        top:2.5em;
         position: absolute;
-        right:3em;
-        margin-top:20px;
+
+        .heart2{
+            width: 2em;
+            position: absolute;
+            transition: all 0.4s;
+
+            &:hover{
+            transform: scale(1.2);
+            }
+        }
+
+        .heart1{
+            opacity: 0;
+            width: 2em;
+            position: absolute;
+            transition: all 0.1s ease-in-out;
+
+            &:hover{
+            opacity: 1;
+            transform: scale(1.2);
+            }
+        }
     }
+
+
 
     /* Starter section */
     .starters{
@@ -228,20 +254,25 @@ header{
 
     .order{
         @include bottom-shadow();
-        @include colored-button();
+        background: $mixed-colors;
         font-size: 1.1em;
         font-family: 'Roboto';
         text-decoration: none;
         padding:1.2em 4em;
         margin-left: auto;
         margin-right: auto;
-        margin-top:3em;
+        margin-top:2em;
         margin-bottom:2em;
         border-radius: 2em;
         color:white;
         text-align: center;
-    }
+        transition: all 0.5s;
 
+        &:hover{
+            background: linear-gradient(180deg, lighten($secondary-color, 2%) 30%, lighten($primary-color, 2%) 100%);
+            box-shadow:0px 12px 15px rgba(0,0,0,.3);
+        }
+    }
 }
 
 /* Footer */
