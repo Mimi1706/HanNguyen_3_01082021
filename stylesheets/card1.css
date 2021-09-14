@@ -1,6 +1,34 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap");
 /* Reused parameters */
+/* Animations Parameters */
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Animations */
+.ticket_animation-1 {
+  animation: FadeIn 0.6s ease-in-out;
+  transform: translate(0, -1.5em);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ticket_animation-2 {
+  animation: FadeIn 1.2s ease-in-out;
+  transform: translate(0, -1.5em);
+  transition: transform 0.6s ease-in-out;
+}
+
+.ticket_animation-3 {
+  animation: FadeIn 1.8s ease-in-out;
+  transform: translate(0, -1.5em);
+  transition: transform 0.9s ease-in-out;
+}
+
 /* General */
 .flex {
   display: flex;
@@ -81,6 +109,7 @@ header a {
   margin-top: -8px;
   border-top: 3px solid #99E2D0;
   display: block;
+  margin-bottom: 2em;
 }
 .menu .starters__allstarters {
   flex-direction: column;
@@ -138,6 +167,7 @@ header a {
   margin-top: -8px;
   border-top: 3px solid #99E2D0;
   display: block;
+  margin-bottom: 2em;
 }
 .menu .main-courses__allcourses {
   flex-direction: column;
@@ -195,6 +225,7 @@ header a {
   margin-top: -8px;
   border-top: 3px solid #99E2D0;
   display: block;
+  margin-bottom: 2em;
 }
 .menu .deserts__allcourses {
   flex-direction: column;
