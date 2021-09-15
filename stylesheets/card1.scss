@@ -27,7 +27,7 @@
         margin-top:1em;
         background-color: white;
         border-radius: 1em;
-        padding:1.5em;
+        padding:1em;
         @include bottom-shadow();
 
         .confirmation{
@@ -52,9 +52,9 @@
 
             .fa-check-circle{
                 color:white;
-                font-size: 40px;
+                font-size: 30px;
                 margin-top:30px;
-                margin-left:25px;
+                margin-left:30px;
                 transition: transform 500ms ease-in-out;
             }
 
@@ -64,7 +64,7 @@
                 }
 
                 .fa-check-circle{
-                    transform:rotate(1turn);
+                    transform:rotate(-1turn);
                 }
 
                 ~h3{
@@ -135,12 +135,12 @@ $mixed-colors:linear-gradient(180deg, $secondary-color 28%, $primary-color 100%)
   }
 
 /* Animations */
-@for $i from 1 through 9 {
+@for $i from 1 through 3 {
     .ticket_animation-#{$i}
     { 
     animation: FadeIn #{$i * 0.6}s ease-in-out;
     transform: translate(0, -1.5em);
-    transition: transform #{$i * 0.4}s ease-in-out; 
+    transition: transform #{$i * 0.6}s ease-in-out; 
     }
 }
 
@@ -436,7 +436,7 @@ footer{
         img{
             object-fit: cover;
             width: 100%;
-            height: 27em;
+            height: 22em;
             position:relative;
             top: -130px;
             overflow: hidden;
@@ -458,9 +458,11 @@ footer{
 
                 .confirmation{
 
+                    width: 70px;
+
                     .fa-check-circle{
-                        margin-top:30px;
-                        margin-left: 30px;
+                        margin-top:20px;
+                        margin-left: 20px;
                         font-size: 2em;
                     }
 
