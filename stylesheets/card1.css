@@ -196,7 +196,7 @@ header a {
 .menu .starters__allstarters .ticket .confirmation .fa-check-circle {
   color: white;
   font-size: 40px;
-  margin-top: 0.7em;
+  margin-top: 0.75em;
   margin-left: 0.65em;
   transition: transform 500ms ease-in-out;
 }
@@ -299,7 +299,7 @@ header a {
 .menu .main-courses__allcourses .ticket .confirmation .fa-check-circle {
   color: white;
   font-size: 40px;
-  margin-top: 0.7em;
+  margin-top: 0.75em;
   margin-left: 0.65em;
   transition: transform 500ms ease-in-out;
 }
@@ -402,7 +402,7 @@ header a {
 .menu .deserts__allcourses .ticket .confirmation .fa-check-circle {
   color: white;
   font-size: 40px;
-  margin-top: 0.7em;
+  margin-top: 0.75em;
   margin-left: 0.65em;
   transition: transform 500ms ease-in-out;
 }
