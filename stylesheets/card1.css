@@ -128,6 +128,7 @@ header a {
   right: 5em;
   top: 2.5em;
   position: absolute;
+  right: 30px;
 }
 .menu--heart .heart2 {
   width: 2em;
