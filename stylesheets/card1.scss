@@ -30,6 +30,59 @@
         padding:1.5em;
         @include bottom-shadow();
 
+        .confirmation{
+            height: 100%;
+            width: 90px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-radius: 0 1em 1em 0;
+            overflow: hidden;
+
+            .wrapper{
+                background-color: $tertiary-color;
+                width: 0%;
+                height:100%;
+                border-radius: 0 1em 1em 0;
+                transition: all 0.5s;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .fa-check-circle{
+                color:white;
+                font-size: 40px;
+                margin-top:0.7em;
+                margin-left:0.65em;
+                transition: transform 500ms ease-in-out;
+            }
+
+            &:hover {
+                .wrapper{
+                    width: 100%; 
+                }
+
+                .fa-check-circle{
+                    transform:rotate(1turn);
+                }
+
+                ~h3{
+                    width: 10em;
+                }
+
+                ~p{
+                    width: 10em;
+                }
+
+                ~.price{
+                    margin-right:100px;
+                }
+
+            }
+
+        }
+
         h3{
             margin:0;
             font-size: 1.1em;
@@ -40,6 +93,7 @@
             overflow: hidden;
             white-space: nowrap;
             width: 15em;
+            transition: all 300ms ease-in-out;
         }
 
         p{
@@ -52,6 +106,7 @@
             overflow: hidden;
             white-space: nowrap;
             width: 15em;
+            transition: all 300ms ease-in-out;
         }
 
         .price{
@@ -61,6 +116,7 @@
             position: relative;
             margin: -20px 0 0 0;
             font-family: 'Roboto';
+            transition: all 300ms ease-in-out;
         }
     }
 }
@@ -76,11 +132,6 @@ $mixed-colors:linear-gradient(180deg, $secondary-color 28%, $primary-color 100%)
     0% {opacity:0;}
     100% {opacity:1;}
   }
-
-@keyframes ScaleUp {
-    from{transform:scale(1)}
-    to{transform:scale(1.1)}
-}
 
 /* Animations */
 @for $i from 1 through 9 {
@@ -172,7 +223,6 @@ header{
         .heart1{
             opacity: 0;
             width: 2em;
-            position: absolute;
             transition: all 0.1s ease-in-out;
 
             &:hover{
@@ -334,6 +384,32 @@ footer{
 
 .menu{
     margin-top:-100px;
+
+    .allmenu{
+
+        .ticket{
+
+            .confirmation{
+
+                &:hover {
+
+                    ~h3{
+                        width: 13em;
+                    }
+    
+                    ~p{
+                        width: 13em;
+                    }
+    
+                    ~.price{
+                        margin-right:100px;
+                    }
+    
+                }
+    
+            }
+        }
+    }
 }
 
 }
@@ -377,6 +453,30 @@ footer{
 
             .ticket{
                 width: 23vw;
+
+                .confirmation{
+
+                    .fa-check-circle{
+                        margin-top:0.6em;
+                    }
+
+                    &:hover {
+
+                        ~h3{
+                            width: 7em;
+                        }
+        
+                        ~p{
+                            width: 7em;
+                        }
+        
+                        ~.price{
+                            margin-right:100px;
+                        }
+        
+                    }
+        
+                }
         
                 h3{
                     font-size: 0.9em;

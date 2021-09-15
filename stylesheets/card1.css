@@ -10,14 +10,6 @@
     opacity: 1;
   }
 }
-@keyframes ScaleUp {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
-}
 /* Animations */
 .ticket_animation-1 {
   animation: FadeIn 0.6s ease-in-out;
@@ -148,7 +140,6 @@ header a {
 .menu--heart .heart1 {
   opacity: 0;
   width: 2em;
-  position: absolute;
   transition: all 0.1s ease-in-out;
 }
 .menu--heart .heart1:hover {
@@ -183,6 +174,47 @@ header a {
   padding: 1.5em;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
 }
+.menu .starters__allstarters .ticket .confirmation {
+  height: 100%;
+  width: 90px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 1em 1em 0;
+  overflow: hidden;
+}
+.menu .starters__allstarters .ticket .confirmation .wrapper {
+  background-color: #99E2D0;
+  width: 0%;
+  height: 100%;
+  border-radius: 0 1em 1em 0;
+  transition: all 0.5s;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menu .starters__allstarters .ticket .confirmation .fa-check-circle {
+  color: white;
+  font-size: 40px;
+  margin-top: 0.7em;
+  margin-left: 0.65em;
+  transition: transform 500ms ease-in-out;
+}
+.menu .starters__allstarters .ticket .confirmation:hover .wrapper {
+  width: 100%;
+}
+.menu .starters__allstarters .ticket .confirmation:hover .fa-check-circle {
+  transform: rotate(1turn);
+}
+.menu .starters__allstarters .ticket .confirmation:hover ~ h3 {
+  width: 10em;
+}
+.menu .starters__allstarters .ticket .confirmation:hover ~ p {
+  width: 10em;
+}
+.menu .starters__allstarters .ticket .confirmation:hover ~ .price {
+  margin-right: 100px;
+}
 .menu .starters__allstarters .ticket h3 {
   margin: 0;
   font-size: 1.1em;
@@ -193,6 +225,7 @@ header a {
   overflow: hidden;
   white-space: nowrap;
   width: 15em;
+  transition: all 300ms ease-in-out;
 }
 .menu .starters__allstarters .ticket p {
   margin: 0;
@@ -204,6 +237,7 @@ header a {
   overflow: hidden;
   white-space: nowrap;
   width: 15em;
+  transition: all 300ms ease-in-out;
 }
 .menu .starters__allstarters .ticket .price {
   font-size: 0.9em;
@@ -212,6 +246,7 @@ header a {
   position: relative;
   margin: -20px 0 0 0;
   font-family: "Roboto";
+  transition: all 300ms ease-in-out;
 }
 .menu .main-courses {
   flex-direction: column;
@@ -241,6 +276,47 @@ header a {
   padding: 1.5em;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
 }
+.menu .main-courses__allcourses .ticket .confirmation {
+  height: 100%;
+  width: 90px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 1em 1em 0;
+  overflow: hidden;
+}
+.menu .main-courses__allcourses .ticket .confirmation .wrapper {
+  background-color: #99E2D0;
+  width: 0%;
+  height: 100%;
+  border-radius: 0 1em 1em 0;
+  transition: all 0.5s;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menu .main-courses__allcourses .ticket .confirmation .fa-check-circle {
+  color: white;
+  font-size: 40px;
+  margin-top: 0.7em;
+  margin-left: 0.65em;
+  transition: transform 500ms ease-in-out;
+}
+.menu .main-courses__allcourses .ticket .confirmation:hover .wrapper {
+  width: 100%;
+}
+.menu .main-courses__allcourses .ticket .confirmation:hover .fa-check-circle {
+  transform: rotate(1turn);
+}
+.menu .main-courses__allcourses .ticket .confirmation:hover ~ h3 {
+  width: 10em;
+}
+.menu .main-courses__allcourses .ticket .confirmation:hover ~ p {
+  width: 10em;
+}
+.menu .main-courses__allcourses .ticket .confirmation:hover ~ .price {
+  margin-right: 100px;
+}
 .menu .main-courses__allcourses .ticket h3 {
   margin: 0;
   font-size: 1.1em;
@@ -251,6 +327,7 @@ header a {
   overflow: hidden;
   white-space: nowrap;
   width: 15em;
+  transition: all 300ms ease-in-out;
 }
 .menu .main-courses__allcourses .ticket p {
   margin: 0;
@@ -262,6 +339,7 @@ header a {
   overflow: hidden;
   white-space: nowrap;
   width: 15em;
+  transition: all 300ms ease-in-out;
 }
 .menu .main-courses__allcourses .ticket .price {
   font-size: 0.9em;
@@ -270,6 +348,7 @@ header a {
   position: relative;
   margin: -20px 0 0 0;
   font-family: "Roboto";
+  transition: all 300ms ease-in-out;
 }
 .menu .deserts {
   flex-direction: column;
@@ -299,6 +378,47 @@ header a {
   padding: 1.5em;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
 }
+.menu .deserts__allcourses .ticket .confirmation {
+  height: 100%;
+  width: 90px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 1em 1em 0;
+  overflow: hidden;
+}
+.menu .deserts__allcourses .ticket .confirmation .wrapper {
+  background-color: #99E2D0;
+  width: 0%;
+  height: 100%;
+  border-radius: 0 1em 1em 0;
+  transition: all 0.5s;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menu .deserts__allcourses .ticket .confirmation .fa-check-circle {
+  color: white;
+  font-size: 40px;
+  margin-top: 0.7em;
+  margin-left: 0.65em;
+  transition: transform 500ms ease-in-out;
+}
+.menu .deserts__allcourses .ticket .confirmation:hover .wrapper {
+  width: 100%;
+}
+.menu .deserts__allcourses .ticket .confirmation:hover .fa-check-circle {
+  transform: rotate(1turn);
+}
+.menu .deserts__allcourses .ticket .confirmation:hover ~ h3 {
+  width: 10em;
+}
+.menu .deserts__allcourses .ticket .confirmation:hover ~ p {
+  width: 10em;
+}
+.menu .deserts__allcourses .ticket .confirmation:hover ~ .price {
+  margin-right: 100px;
+}
 .menu .deserts__allcourses .ticket h3 {
   margin: 0;
   font-size: 1.1em;
@@ -309,6 +429,7 @@ header a {
   overflow: hidden;
   white-space: nowrap;
   width: 15em;
+  transition: all 300ms ease-in-out;
 }
 .menu .deserts__allcourses .ticket p {
   margin: 0;
@@ -320,6 +441,7 @@ header a {
   overflow: hidden;
   white-space: nowrap;
   width: 15em;
+  transition: all 300ms ease-in-out;
 }
 .menu .deserts__allcourses .ticket .price {
   font-size: 0.9em;
@@ -328,6 +450,7 @@ header a {
   position: relative;
   margin: -20px 0 0 0;
   font-family: "Roboto";
+  transition: all 300ms ease-in-out;
 }
 .menu .order {
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
@@ -398,6 +521,15 @@ footer .footer__categories .fa-hands-helping {
   .menu {
     margin-top: -100px;
   }
+  .menu .allmenu .ticket .confirmation:hover ~ h3 {
+    width: 13em;
+  }
+  .menu .allmenu .ticket .confirmation:hover ~ p {
+    width: 13em;
+  }
+  .menu .allmenu .ticket .confirmation:hover ~ .price {
+    margin-right: 100px;
+  }
 }
 /* Desktop Version */
 @media (min-width: 1000px) {
@@ -431,6 +563,18 @@ footer .footer__categories .fa-hands-helping {
   }
   .menu .allmenu .ticket {
     width: 23vw;
+  }
+  .menu .allmenu .ticket .confirmation .fa-check-circle {
+    margin-top: 0.6em;
+  }
+  .menu .allmenu .ticket .confirmation:hover ~ h3 {
+    width: 7em;
+  }
+  .menu .allmenu .ticket .confirmation:hover ~ p {
+    width: 7em;
+  }
+  .menu .allmenu .ticket .confirmation:hover ~ .price {
+    margin-right: 100px;
   }
   .menu .allmenu .ticket h3 {
     font-size: 0.9em;
