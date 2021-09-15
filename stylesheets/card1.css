@@ -196,8 +196,8 @@ header a {
 .menu .starters__allstarters .ticket .confirmation .fa-check-circle {
   color: white;
   font-size: 40px;
-  margin-top: 0.75em;
-  margin-left: 0.65em;
+  margin-top: 30px;
+  margin-left: 25px;
   transition: transform 500ms ease-in-out;
 }
 .menu .starters__allstarters .ticket .confirmation:hover .wrapper {
@@ -299,8 +299,8 @@ header a {
 .menu .main-courses__allcourses .ticket .confirmation .fa-check-circle {
   color: white;
   font-size: 40px;
-  margin-top: 0.75em;
-  margin-left: 0.65em;
+  margin-top: 30px;
+  margin-left: 25px;
   transition: transform 500ms ease-in-out;
 }
 .menu .main-courses__allcourses .ticket .confirmation:hover .wrapper {
@@ -402,8 +402,8 @@ header a {
 .menu .deserts__allcourses .ticket .confirmation .fa-check-circle {
   color: white;
   font-size: 40px;
-  margin-top: 0.75em;
-  margin-left: 0.65em;
+  margin-top: 30px;
+  margin-left: 25px;
   transition: transform 500ms ease-in-out;
 }
 .menu .deserts__allcourses .ticket .confirmation:hover .wrapper {
@@ -568,7 +568,7 @@ footer .footer__categories .fa-hands-helping {
     width: 23vw;
   }
   .menu .allmenu .ticket .confirmation .fa-check-circle {
-    margin-top: 0.6em;
+    margin-top: 25px;
   }
   .menu .allmenu .ticket .confirmation:hover ~ h3 {
     width: 7em;
