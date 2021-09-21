@@ -53,7 +53,7 @@
             .fa-check-circle{
                 color:white;
                 font-size: 30px;
-                margin-top:30px;
+                margin-top:25px;
                 margin-left:30px;
                 transition: transform 500ms ease-in-out;
             }
@@ -139,8 +139,9 @@ $mixed-colors:linear-gradient(180deg, $secondary-color 28%, $primary-color 100%)
     .ticket_animation-#{$i}
     { 
     animation: FadeIn #{$i * 0.6}s ease-in-out;
-    transform: translate(0, -1.5em);
+    transform: translate(0, -20px);
     transition: transform #{$i * 0.6}s ease-in-out; 
+    display: inline-block;
     }
 }
 
